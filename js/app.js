@@ -41,11 +41,17 @@ createApp({
       if(this.currentImage < 0) this.currentImage = this.allImages.length -1;
       if(this.currentImage === this.allImages.length) this.currentImage = 0
     }
-  }
+  },
 
 
 
+mounted(){
+  setInterval(() => {
+    this.nextPrev(true)
+  }, 3000)
 
+  
+}
 
 }).mount("#app")
 
