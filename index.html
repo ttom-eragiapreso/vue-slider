@@ -31,12 +31,13 @@
           alt="" 
           v-for="(image, index) in allImages"
           @click=" currentImage = index"
+          :class="{'active': index === currentImage}"
           >
         </div>
 
       <div class="btn-container">
-        <button class="prev">Previous Photo</button>
-        <button class="next">Next Photo</button>
+        <button class="prev" @click="nextPrev(false)">Previous Photo</button>
+        <button class="next" @click="nextPrev(true)">Next Photo</button>
       </div>
 
   </div>

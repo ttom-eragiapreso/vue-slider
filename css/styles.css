@@ -14,7 +14,7 @@ img {
 }
 
 .active {
-  display: block;
+  display: inline-block;
   border: 1px solid black;
 }
 
@@ -33,4 +33,14 @@ img {
   width: 20%;
   height: 100%;
   cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.prev {
+  margin-right: 15px;
 }

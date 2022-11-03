@@ -35,7 +35,12 @@ createApp({
 },
 
   methods: {
-    
+    nextPrev(isNext){
+      isNext? this.currentImage++ : this.currentImage--
+
+      if(this.currentImage < 0) this.currentImage = this.allImages.length -1;
+      if(this.currentImage === this.allImages.length) this.currentImage = 0
+    }
   }
 
 
