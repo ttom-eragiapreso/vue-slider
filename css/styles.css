@@ -1,0 +1,116 @@
+/* Reset and general */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Utilities */
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+/* Centro tutto */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.carousel{
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel{
+  border: 1px solid black;
+}
+
+.carousel {
+  width: 75%;
+  aspect-ratio: 16/9;
+}
+
+.slider {
+  height: 80%;
+  position: relative;
+}
+
+.thumbnails {
+  height: 20%;
+  position: relative;
+}
+
+
+button{
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  transition: all .5s ease;
+  border: 1px solid black;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.533);
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+button:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+
+
+
+.thumbnails img {
+  width: 20%;
+  opacity: .55;
+  transition: all .5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+  border: 2px solid white;
+}
+
+.thumbnails img.active {
+  opacity: 1;
+}
+
+.country-name, .country-description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px 50px;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.country-description {
+  top: 75px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+}
